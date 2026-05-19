@@ -1140,11 +1140,95 @@
     }
 
     @media (max-width: 640px) {
-      .pkg-detail { padding: 28px; }
-      .pkg-detail-header { flex-direction: column; }
+      /* NAV */
+      nav { padding: 16px 20px; }
+      .nav-logo { font-size: 14px; }
+
+      /* COVER */
+      .cover { padding: 100px 20px 60px; }
+      .cover-meta {
+        flex-direction: column;
+        gap: 16px;
+      }
+      .cover-meta-item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      .cover-meta-label { margin-bottom: 0; }
+
+      /* SCROLL HINT */
+      .scroll-hint { bottom: 20px; }
+
+      /* BOTELLAS */
+      .bottles-section { padding: 60px 16px 80px; }
+      .bottles-eyebrow { gap: 10px; font-size: 9px; }
+      .bottles-line { max-width: 40px; }
+
+      .bottles-wrap {
+        flex-direction: row;
+        align-items: flex-end;
+        gap: 8px;
+        justify-content: center;
+      }
+
+      .bottle-item { max-width: 130px; }
+
+      .bottle-clip {
+        width: 130px;
+        height: 215px;
+        clip-path: path('M 65,0 C 93,0 121,9 121,37 C 121,93 102,177 65,214 C 28,177 9,93 9,37 C 9,9 37,0 65,0 Z');
+      }
+
+      .bottle-clip:hover {
+        clip-path: path('M 65,0 C 93,0 121,9 121,37 C 121,93 102,177 65,214 C 28,177 9,93 9,37 C 9,9 37,0 65,0 Z');
+      }
+
+      .bottle-glow { width: 100px; height: 100px; bottom: 30px; }
+
+      .bottle-label { font-size: 14px; margin-top: 12px; }
+      .bottle-sub { font-size: 9px; letter-spacing: 1px; }
+
+      .bottle-center-text { padding-bottom: 40px; }
+      .bottle-brand { font-size: 13px; }
+      .bottle-center-line { height: 24px; margin: 10px auto; }
+      .bottle-center-sub { font-size: 8px; }
+
+      /* SECTIONS */
+      section.main-section { padding: 60px 20px; }
+
+      /* PKG DETAIL */
+      .pkg-detail { padding: 24px 20px; }
+      .pkg-detail-header { flex-direction: column; gap: 12px; }
       .pkg-detail-price .amount { text-align: left; }
       .pkg-detail-price .period { text-align: left; }
-      .rec-banner { padding: 36px 24px; }
+      .pkg-commitment { text-align: left; }
+      .features-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
+
+      /* REC BANNER */
+      .rec-banner { padding: 32px 20px; }
+      .rec-price { font-size: 52px; }
+
+      /* EXTRAS */
+      .extras-grid { grid-template-columns: 1fr; }
+      .extra-discount-banner { flex-direction: column; gap: 10px; text-align: center; }
+
+      /* CTA */
+      .cta-section { padding: 80px 20px; }
+
+      /* OBJECTIVE */
+      .objective-grid { grid-template-columns: 1fr; gap: 16px; }
+      .obj-arrow { transform: rotate(90deg); text-align: center; }
+    }
+
+    @media (max-width: 380px) {
+      .bottle-item { max-width: 110px; }
+      .bottle-clip {
+        width: 110px;
+        height: 182px;
+        clip-path: path('M 55,0 C 79,0 103,8 103,32 C 103,79 87,151 55,182 C 23,151 7,79 7,32 C 7,8 31,0 55,0 Z');
+      }
+      .features-grid { grid-template-columns: 1fr; }
     }
 
     /* ══════════ SELECTION ══════════ */
